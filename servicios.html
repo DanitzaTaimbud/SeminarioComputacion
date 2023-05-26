@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="icon" href="images/ms.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='mdb5-free-standard/css/mdb.min.css' )}}">
+    <script type="text/javascript" src="{{ url_for('static', filename='mdb5-free-standard/js/mdb.min.js' )}}"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand me-2" href="">
+            <img src="images/ms.png"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+              style="margin-top: -1px;"
+            />
+          </a>
+          <a class="navbar-brand me-2" href="">
+            <img src="images/Mensajería colombia.png"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+              style="margin-top: -1px;"
+            />
+          </a>
+      
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <!-- Left links -->
+      
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-link px-3 me-2">
+                Iniciar sesión
+              </button>
+              <button type="button" class="btn btn-primary me-3">
+                Registrarse
+              </button>
+            </div>
+          </div>
+            <div>
+                <ul class="navbar-nav">
+                <!-- Icon dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                    >
+                    <i class="flag-united-kingdom flag m-0"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English
+                        <i class="fa fa-check text-success ms-2"></i></a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+                    </li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-xl-4 mb-4 mb-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Nosotros</a> 
+          </li>
+          
+          
+          <li>
+            <a class="nav-link px-2 first-lvl" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#nosotros" 
+            aria-expanded="true" href="#"> Servicios
+            </a>
+          <div class="collapse sub-menu-container tob-bar-sub">
+            <ul class="list-unstyled sub-menu">
+                <li><a class="nav-link" href="#">Mensajes</a></li>
+                <li><a class="nav-link" href="#">Action</a></li>
+                <li><a class="nav-link" href="#">Another action</a></li>
+                <li><a class="nav-link" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+               
+        </ul>
+        
+      </div>
+      <!-- Collapsible wrapper -->
+
+      <div class="container-fluid">
+        <form class="d-flex input-group w-50">
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+        </form>
+      </div>
+
+
+
+
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+              class="rounded-circle"
+              height="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+    
+
+  </nav>
+  <!-- Navbar -->
+<!------------------------------------------------------------------------------------>
+
+
+    <!-- Tabs navs -->
+<ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="ex1-tab-1"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-1"
+        aria-selected="true"
+        >Tab 1</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-2"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-2"
+        role="tab"
+        aria-controls="ex1-tabs-2"
+        aria-selected="false"
+        >Tab 2</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-3"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Tab 3</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="ex1-tab-4"
+          data-mdb-toggle="tab"
+          href="#ex1-tabs-4"
+          role="tab"
+          aria-controls="ex1-tabs-4"
+          aria-selected="false"
+          >Tab 4</a
+        >
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="ex1-tab-5"
+          data-mdb-toggle="tab"
+          href="#ex1-tabs-5"
+          role="tab"
+          aria-controls="ex1-tabs-5"
+          aria-selected="false"
+          >Tab 5</a
+        >
+      </li>
+
+  </ul>
+  <!-- Tabs navs -->
+  
+  <!-- Tabs content -->
+  <div class="tab-content" id="ex1-content">
+    <div
+      class="tab-pane fade show active"
+      id="ex1-tabs-1"
+      role="tabpanel"
+      aria-labelledby="ex1-tab-1"
+    >
+      Tab 1 content
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+      Tab 2 content
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+      Tab 3 content
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+        Tab 4 content
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+        Tab 5 content
+    </div>
+
+  </div>
+  <!-- Tabs content -->
+
+  
+<!--------------------------------------------------------------------------------------------->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  <!----------------------------------------------------------------------------------------------------------->
+    <!-- Section: Links  -->
+    <section class="" >
+      <div class="container-fluid text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-heart me-3"></i>Mensajería  <br> Colombia
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          
+  
+          
+  
+          <!-- Grid column -->
+          <div class="container-fluid col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Centro de operaciones</h6>
+            <p><i class="fas fa-home me-3"></i> Bogotá D.C. (Colombia)</p>
+            <p><i class="fas fa-address-book me-3"></i> Carrera 80 # 17B - 40</p> 
+            <p><i class="fas fa-envelope me-3"></i>colomen@xmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> + 57 304 567 8891</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
